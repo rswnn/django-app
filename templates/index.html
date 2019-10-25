@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="policy-definition">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <TITLE> Membuat Frame berdasarkan baris </TITLE>
+</head>
+        <frameset rows="25%,65%,10%">
+        <frame src="{% url "header" %}">
+        <frameset cols="15%, 85%">
+        <frame src="{% url "menu" %}">
+        <frame src="{% url "home" %}" name="kiri">
+        </frameset>
+        <frame src="{% url "footer" %}">
+        </frameset> 
+
+</html>

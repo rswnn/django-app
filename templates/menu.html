@@ -1,0 +1,20 @@
+{% load staticfiles %}
+
+<HTML>
+    <HEAD>
+    <TITLE>Contoh Membuat Hyperlink</TITLE>
+    </HEAD>
+    <BODY>
+    <font color="navy" size="4">Menu </font>
+    <font color="sienna" size="4">
+    <ul style="list-style-type: none; text-align: center;" type="square">
+    <li style="padding: 10px; border: 1px solid #dddddd; margin: 10px; border-radius: 5px; background-color:cyan; color: #ffffff;"><a href="{% url "home" %}" target="kiri">Home</a></li>
+    <li style="padding: 10px; border: 1px solid #dddddd;margin: 10px; border-radius: 5px; background-color:cyan; color: #ffffff;"><a href="{% url "profil" %}"
+    target="kiri">Profil</a></li>
+    <li style="padding: 10px; border: 1px solid #dddddd;margin: 10px; border-radius: 5px; background-color:cyan; color: #ffffff;"><a href="{% url "gallery" %}"
+    target="kiri">Gallery</a></li>
+    <li style="padding: 10px; border: 1px solid #dddddd;margin: 10px; border-radius: 5px; background-color:cyan; color: #ffffff;"><a href="{% url "kontak" %}"
+    target="kiri">Kontak</a></li>
+    </ul></font>
+    </BODY>
+    </HTML> 
